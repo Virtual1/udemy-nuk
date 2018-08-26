@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Contest Theme</title>
+    <title>AMT Digital Toolbox</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -31,8 +32,18 @@
             text-align: center;
             width: 21px;
         }
+
         .faded {
             opacity: 0.3;
+        }
+
+        .navLogo {
+            max-height: 2rem;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
         }
 
         /* Only using mailchimp styles below */
@@ -83,8 +94,8 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" rel="tooltip" title="Best Solutions, Inc." data-placement="bottom" target="_blank">
-                    LOGO
+                <a class="navbar-brand" rel="tooltip" title="Best Solutions" data-placement="bottom" target="_blank">
+                    <img class="navLogo" src="BSlogo.png">
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -138,7 +149,7 @@
             </div>
             <div class="container">
                 <div class="content-center brand">
-                    <img class="n-logo" src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/img/now-logo.png" alt="">
+                    <img class="logo" src="BStoolbox.png" alt="Best Solutions">
                     <h1 class="h1-seo">AMT Digital Toolbox</h1>
                     <h3>An app designed for today's aircaft maintenance technicians</h3>
                 </div>
@@ -150,65 +161,54 @@
 
             <div class="section section-basic">
                 <div class="container text-center mt-5">
-                    <h3 class="title">Add your content here...</h3>
+                    <h3 class="title">An all-in-one app for aviation mechanics</h3>
 
-                    <div id="carouselFeatures" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselFeatures" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselFeatures" data-slide-to="1"></li>
-                            <li data-target="#carouselFeatures" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <img class="card-img faded" src="plane2.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                        <p class="card-text">Last updated 3 mins ago</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Nature, United States</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <img class="card-img faded" src="plane1.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                        <p class="card-text">Last updated 3 mins ago</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Somewhere Beyond, United States</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <img class="card-img faded" src="plane3.jpg" alt="Card image">
-                                    <div class="card-img-overlay">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                            content. This content is a little bit longer.</p>
-                                        <p class="card-text">Last updated 3 mins ago</p>
-                                    </div>
-                                </div>                                
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Yellowstone National Park, United States</h5>
-                                </div>
+                    <!--Features Accordian-->
+                    <div id="featureAccordion" data-children=".item">
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#featureAccordion" href="#feature1" aria-expanded="true" aria-controls="feature1">
+                                Use your phone for flight control rigging
+                            </a>
+                            <div id="feature1" class="collapse" role="tabpanel">
+                                <p class="mb-3">
+                                    Use your mobile device's built-in clinometer for rigging flight controls, verifying flight control travel, measuring prop rotation during engine timing.
+                                </p>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselFeatures" role="button" data-slide="prev">
-                            <i class="now-ui-icons arrows-1_minimal-left"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselFeatures" role="button" data-slide="next">
-                            <i class="now-ui-icons arrows-1_minimal-right"></i>
-                        </a>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#featureAccordion" href="#feature2" aria-expanded="false" aria-controls="feature2">
+                                Contains several useful calculators
+                            </a>
+                            <div id="feature2" class="collapse" role="tabpanel">
+                                <p class="mb-3">
+                                    All the calculators you need in one place: a torque wrench extension calculator, a weight and balance calculator, a rudder
+                                    travel calculator (convert travel from degrees to inches), and more.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#featureAccordion" href="#feature3" aria-expanded="false" aria-controls="feature3">
+                                Access FAA regulations and publications
+                            </a>
+                            <div id="feature3" class="collapse" role="tabpanel">
+                                <p class="mb-3">
+                                    Use the app to access FAA regulations, Airworthiness Directives, Advisory Circulars, and other publications.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#featureAccordion" href="#feature4" aria-expanded="false" aria-controls="feature4">
+                                Future plans for a professional kit
+                            </a>
+                            <div id="feature4" class="collapse" role="tabpanel">
+                                <p class="mb-3">
+                                    A professional kit that will contain bluetooth enabled clinometers, cable tensiometer, and mag timing light that will automatically record and save measurements to your device or computer.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <br>
+                    <hr>
 
                     <!--Sign-up button-->
                     <p>Sign up to our newsletter for release and other information.</p>
@@ -279,53 +279,55 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End sign-up modal -->
 
                 </div>
-            </div>
+                <!-- End sign-up modal -->
 
+            </div>
         </div>
 
+    </div>
 
-        <footer class="footer" data-background-color="black">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, Designed using the
-                    <a href="https://www.creative-tim.com/product/now-ui-kit" target="_blank">Now UI Kit</a> from
-                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-                    <!--Plane1.jpg credit <a style="background-color:rgb(73, 73, 73);color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@echaparro?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Edgar Chaparro"><span style="display:inline-block;padding:2px 3px">Backgound photo by <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Edgar Chaparro</span></a>-->
-                    <!--Plane2.jpg credit Photo by Mark Asthoff on Unsplash-->
-                    <!--Plane3.jpg credit Photo by Andrew Ruiz on Unsplash-->
-                </div>
+
+    <footer class="footer" data-background-color="black">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://presentation.creative-tim.com">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                            MIT License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>, Designed using the
+                <a href="https://www.creative-tim.com/product/now-ui-kit" target="_blank">Now UI Kit</a> from
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                <!--Plane1.jpg credit <a style="background-color:rgb(73, 73, 73);color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@echaparro?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Edgar Chaparro"><span style="display:inline-block;padding:2px 3px">Backgound photo by <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Edgar Chaparro</span></a>-->
+                <!--Plane2.jpg credit Photo by Mark Asthoff on Unsplash-->
+                <!--Plane3.jpg credit Photo by Andrew Ruiz on Unsplash-->
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 
