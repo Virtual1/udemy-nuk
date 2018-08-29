@@ -3,32 +3,105 @@
 
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>Contest Theme</title>
+    <title>AMT Digital Toolbox</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
 
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-  <!-- Bootstrap core CSS     -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css">
-  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"/>
-  <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+    <!-- Bootstrap core CSS     -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css"
+    />
+    <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"
+    />
+    <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet" />
 
-  <style>
-    .navbar .navbar-nav .nav-link:not(.btn) i.fa{
-      font-size: 18px;
-      position: relative;
-      top: 3px;
-      text-align: center;
-      width: 21px;
-    }
-  </style>
+    <!-- not using default Mailchimp styles  -->
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+    <style type="text/css">
+        .navbar .navbar-nav .nav-link:not(.btn) i.fa {
+            font-size: 18px;
+            position: relative;
+            top: 3px;
+            text-align: center;
+            width: 21px;
+        }
+
+        .navLogo {
+            max-height: 2rem;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .faded {
+            opacity: 0.9;
+        }
+
+        .moreFaded {
+            opacity: 0.8;
+        }
+
+        /* Ensures features div is fully displayed when navigated to */
+
+        #features:before {
+            display: block;
+            content: " ";
+            height: 40px;
+            margin-top: -40px;
+            visibility: hidden;
+        }
+
+        /* Not using suggested mailchimp style in favor of bootstrap template style */
+
+        /* #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        } */
+
+        /* Only using mailchimp styles below - copied from mailchimp css file "classic-10_7.css" */
+
+        #mc_embed_signup .asterisk {
+            color: rgb(255, 54, 54);
+            font-size: 150%;
+            font-weight: normal;
+            position: relative;
+            top: 5px;
+        }
+
+        #mc_embed_signup .indicates-required {
+            text-align: right;
+            font-size: 11px;
+            margin-right: 4%;
+        }
+
+        /* Ensuring mailchimp inline error matches Now-UI-Kit styles */
+
+        #mc_embed_signup input.mce_inline_error {
+            border-color: rgb(255, 54, 54) !important;
+        }
+
+        #mc_embed_signup div.mce_inline_error {
+            position: relative;
+            border: 0;
+            border-radius: 0;
+            margin: 1rem 0 !important;
+            padding: .9rem 1.25rem !important;
+            background-color: rgba(255, 54, 54, 0.8) !important;
+            color: #FFFFFF !important;
+            font-weight: normal !important;
+        }
+    </style>
 
 </head>
 
@@ -37,112 +110,309 @@
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" rel="tooltip" title="Add a beautiful tooltip here" data-placement="bottom" target="_blank">
-                    LOGO
+                <a class="navbar-brand" rel="tooltip" title="Best Solutions" data-placement="bottom" target="_blank">
+                    <img class="navLogo" src="BSlogo.png">
                 </a>
-                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" data-nav-image="./assets/img/blurred-image-1.jpg">
+            <div class="collapse navbar-collapse justify-content-end" data-nav-image="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
-
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none d-xl-none">Twitter</p>
+                        <!-- below onclick event script to close expanded navbar when link is clicked -->
+                        <a class="nav-link" rel="tooltip" title="View Features" data-placement="bottom" href="#features" onclick="$('.navbar-toggler:visible').click();">
+                            FEATURES
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none d-xl-none">Facebook</p>
+                        <!-- below onclick event script to close expanded navbar when link is clicked -->
+                        <a class="nav-link" rel="tooltip" title="Sign up for Info" data-placement="bottom" href="#signup" onclick="$('.navbar-toggler:visible').click();">
+                            SIGN UP
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none d-xl-none">Instagram</p>
-                        </a>
+                        <!-- Below mouseout and onclick event scripts are for the following
+                         1- disables navigation while otherwise acting as a normal link 
+                         2- hides the tooltip when the popover is activated
+                         3- removes popover when mouse is moved away
+                        (also used for facebook and instagram links) -->
+                        <div data-container="body" data-toggle="popover" title="We're sorry," data-placement="bottom" data-content="Twitter account doesn't exist."
+                            onmouseout="$(this).popover('hide');">
+                            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" onclick="$(this).tooltip('hide'); return false;"
+                                href="https://twitter.com/AMTDigitalToolbox" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                                <p class="d-lg-none d-xl-none">Twitter</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div data-container="body" data-toggle="popover" title="We're sorry," data-placement="bottom" data-content="Facebook page doesn't exist."
+                            onmouseout="$(this).popover('hide');">
+                            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" onclick="$(this).tooltip('hide'); return false;"
+                                href="https://www.facebook.com/AMTDigitalToolbox" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                <p class="d-lg-none d-xl-none">Facebook</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div data-container="body" data-toggle="popover" title="We're sorry," data-placement="bottom" data-content="Instagram account doesn't exist."
+                            onmouseout="$(this).popover('hide');">
+                            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" onclick="$(this).tooltip('hide'); return false;"
+                                href="https://www.instagram.com/AMTDigitalToolbox" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                                <p class="d-lg-none d-xl-none">Instagram</p>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- End Navbar -->
+
     <div class="wrapper">
         <div class="page-header clear-filter" filter-color="orange">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/img/header.jpg');">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('headBG.jpg');">
             </div>
             <div class="container">
                 <div class="content-center brand">
-                    <img class="n-logo" src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/img/now-logo.png" alt="">
-                    <h1 class="h1-seo">Title here</h1>
-                    <h3>You can add a small description</h3>
+                    <img class="logo" src="BStoolbox.png" alt="Best Solutions">
+                    <h1 class="h1-seo">AMT Digital Toolbox</h1>
+                    <h3>An app designed for today's aircaft maintenance technicians</h3>
                 </div>
             </div>
         </div>
+
+
         <div class="main">
 
             <div class="section section-basic">
-                <div class="container text-center mt-5">
-                  <h3 class="title">Add your content here...</h3>
+                <div class="container text-center mt-5" id="features">
+                    <h3 class="title">An all-in-one app for aircraft mechanics</h3>
 
+                    <!--Features cards-->
+                    <div class="row">
+                        <div class="card col-sm-6 col-lg-3">
+                            <div class="card-header">
+                                <h4 class="card-title">
+                                    Use your phone for flight control rigging
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-primary">Use your mobile device's built-in clinometer for:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">rigging flight controls</li>
+                                    <li class="list-group-item">verifying flight control travel</li>
+                                    <li class="list-group-item">measuring prop rotation during engine timing</li>
+                                    <li class="list-group-item">&amp; leveling aircraft for jacking and weighing</li>
+                                </ul>
+                            </div>
+                            <img class="card-bottom faded" src="control.jpg" alt="Controls" />
+                        </div>
+                        <div class="card  col-sm-6 col-lg-3">
+                            <img class="card-top moreFaded" src="calculation.jpg" alt="Calculator" />
+                            <div class="card-header" role="tab" id="heading2">
+                                <h4 class="card-title">
+                                    Contains several useful calculators
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-primary">All the calculators you need in one place:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">torque wrench extension calculator</li>
+                                    <li class="list-group-item">weight and balance / CG calculator</li>
+                                    <li class="list-group-item">&amp; rudder travel calculator (convert travel from degrees to inches)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card col-sm-6 col-lg-3">
+                            <div class="card-header" role="tab" id="heading3">
+                                <h4 class="card-title">
+                                    Access FAA regulations and publications
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-primary">Use the app to access:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">FAA regulations</li>
+                                    <li class="list-group-item">Airworthiness Directives</li>
+                                    <li class="list-group-item">Advisory Circulars</li>
+                                    <li class="list-group-item">Handbooks and Manuals</li>
+                                    <li class="list-group-item">&amp; other publications</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <img class="card-bottom align-self-end faded" src="pubs.jpg" alt="Publications" />
+                        </div>
+                        <div class="card col-sm-6 col-lg-3">
+                            <img class="card-top moreFaded" src="pro.jpg" alt="Professional" />
+                            <div class="card-header" role="tab" id="heading4">
+                                <h4 class="card-title">
+                                    Future plans for a professional kit
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="text-primary">A kit with bluetooth enabled devices:</h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">clinometers</li>
+                                    <li class="list-group-item">cable tensiometer</li>
+                                    <li class="list-group-item">&amp; mag timing light</li>
+                                    <li class="list-group-item text-muted">that will automatically record and save measurements to your device or computer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <hr />
+
+                    <!--Sign-up button-->
+                    <p id="signup">Sign up for our newsletter to get product release and other information.</p>
+                    <button class="btn btn-primary btn-round btn-lg" type="button" data-toggle="modal" data-target="#emailForm">
+                        <i class="now-ui-icons ui-1_email-85"></i> Sign Up!
+                    </button>
+                </div>
+
+
+                <!-- Sign-up Modal -->
+                <div class="modal fade" id="emailForm" tabindex="-1" role="dialog" data-keyboard="true" aria-labelledby="formLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="formLabel">For More Information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-left">
+
+                                <!-- Begin MailChimp Signup Form -->
+                                <div id="mc_embed_signup">
+                                    <form action="https://tech.us18.list-manage.com/subscribe/post?u=9a4231984ba198b882be7800f&amp;id=e7a0134cf9" method="post"
+                                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+                                        novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="indicates-required">
+                                                <span class="asterisk">*</span> indicates required
+                                            </div>
+                                            <div class="mc-field-group form-group">
+                                                <label for="mce-EMAIL">Email address
+                                                    <span class="asterisk">*</span>
+                                                </label>
+                                                <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" aria-describedby="emailHelp"
+                                                    placeholder="Enter email" />
+                                                <small id="emailHelp" class="form-text text-muted">We promise to not share your email with anyone else.</small>
+                                            </div>
+                                            <div class="mc-field-group form-group">
+                                                <label for="mce-FNAME">First Name </label>
+                                                <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" />
+                                            </div>
+                                            <div class="mc-field-group form-group">
+                                                <label for="mce-LNAME">Last Name </label>
+                                                <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" />
+                                            </div>
+                                            <div id="mce-responses" class="clear">
+                                                <div class="response alert alert-danger" id="mce-error-response" style="display:none"></div>
+                                                <div class="response alert alert-success" id="mce-success-response" style="display:none"></div>
+                                            </div>
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_9a4231984ba198b882be7800f_e7a0134cf9" tabindex="-1" value="" />
+                                            </div>
+                                            <!-- replaced mailchimp submit with modal submit button below
+                                                <div class="clear">
+                                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                                        class="button">
+                                                </div> -->
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End mc_embed_signup-->
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" form="mc-embedded-subscribe-form">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End sign-up modal -->
 
-        <footer class="footer" data-background-color="black">
-            <div class="container">
-                <nav>
+        </div>
+    </div>
+
+    <footer class="footer" data-background-color="black">
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-6 text-center text-sm-left">
                     <ul>
                         <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
+                            <a href="">
+                                About This Page
                             </a>
                         </li>
                         <li>
-                            <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
+                            <a href="">
+                                Suggest Features
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="copyright">
+                <div class="copyright col-sm-6 text-sm-right">
                     &copy;
                     <script>
                         document.write(new Date().getFullYear())
-                    </script>, Designed by
-                    <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                    </script>, Created using the
+                    <a href="https://www.creative-tim.com/product/now-ui-kit" target="_blank">Now UI Kit</a> from
                     <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                    <!--Plane1.jpg credit <a style="background-color:rgb(73, 73, 73);color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@echaparro?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Edgar Chaparro"><span style="display:inline-block;padding:2px 3px">Backgound photo by <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Edgar Chaparro</span></a>-->
+                    <!--Plane2.jpg credit Photo by Mark Asthoff on Unsplash-->
+                    <!--Plane3.jpg credit Photo by Andrew Ruiz on Unsplash-->
                 </div>
             </div>
-        </footer>
-    </div>
-</body>
+        </div>
+    </footer>
 
-<!--   Core JS Files   -->
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+    <!--   Core JS Files   -->
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+
+    <!-- MailChimp JS -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+
+</body>
 
 </html>
